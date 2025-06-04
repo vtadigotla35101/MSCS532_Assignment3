@@ -1,0 +1,9 @@
+test_delete (__main__.TestHashTable.test_delete) ... ok
+test_insert_and_search (__main__.TestHashTable.test_insert_and_search) ... ok
+test_search_nonexistent_key (__main__.TestHashTable.test_search_nonexistent_key) ... ok
+test_update_existing_key (__main__.TestHashTable.test_update_existing_key) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK

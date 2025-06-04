@@ -1,0 +1,78 @@
+Starting Empirical Comparison...
+
+--- Randomized Quicksort ---
+
+--- Running experiments for randomized_quicksort ---
+  Size 100: Average time = 0.1967 ms
+  Size 500: Average time = 0.6605 ms
+  Size 1000: Average time = 0.9415 ms
+  Size 5000: Average time = 5.5466 ms
+  Size 10000: Average time = 12.8208 ms
+
+--- Running experiments for randomized_quicksort ---
+  Size 100: Average time = 0.0797 ms
+  Size 500: Average time = 0.5509 ms
+  Size 1000: Average time = 1.1827 ms
+  Size 5000: Average time = 6.1904 ms
+  Size 10000: Average time = 11.6322 ms
+
+--- Running experiments for randomized_quicksort ---
+  Size 100: Average time = 0.0576 ms
+  Size 500: Average time = 0.3738 ms
+  Size 1000: Average time = 0.9044 ms
+  Size 5000: Average time = 6.1477 ms
+  Size 10000: Average time = 12.2006 ms
+
+--- Running experiments for randomized_quicksort ---
+  Size 100: Average time = 0.1398 ms
+  Size 500: Average time = 1.9896 ms
+  Size 1000: Average time = 7.8465 ms
+  Size 5000: Average time = 252.9130 ms
+  Size 10000: Average time = 883.8978 ms
+
+--- Deterministic Quicksort (First Element Pivot) ---
+
+--- Running experiments for deterministic_quicksort ---
+  Size 100: Average time = 0.0436 ms
+  Size 500: Average time = 0.3128 ms
+  Size 1000: Average time = 1.1933 ms
+  Size 5000: Average time = 6.4240 ms
+  Size 10000: Average time = 11.0302 ms
+
+--- Running experiments for deterministic_quicksort ---
+  Size 100: Average time = 0.1433 ms
+  Size 500: Average time = 2.7727 ms
+  Size 1000: Average time = 13.2597 ms
+  Size 5000: Average time = 324.2377 ms
+  Size 10000: Average time = 1381.9274 ms
+
+--- Running experiments for deterministic_quicksort ---
+  Size 100: Average time = 0.1534 ms
+  Size 500: Average time = 5.1243 ms
+  Size 1000: Average time = 21.8029 ms
+  Size 5000: Average time = 640.9517 ms
+  Size 10000: Average time = 4566.1834 ms
+
+--- Running experiments for deterministic_quicksort ---
+  Size 100: Average time = 0.3202 ms
+  Size 500: Average time = 5.8202 ms
+  Size 1000: Average time = 23.3096 ms
+  Size 5000: Average time = 669.4095 ms
+  Size 10000: Average time = 1008.5654 ms
+
+--- Summary of Results (Average Time in ms) ---
+Size       Randomized (Random)       Deterministic (Random)    Randomized (Sorted)       Deterministic (Sorted)   
+100        0.1967                    0.0436                    0.0797                    0.1433                   
+500        0.6605                    0.3128                    0.5509                    2.7727                   
+1000       0.9415                    1.1933                    1.1827                    13.2597                  
+5000       5.5466                    6.4240                    6.1904                    324.2377                 
+10000      12.8208                   11.0302                   11.6322                   1381.9274                
+
+Size       Randomized (Rev.Sorted)   Deterministic (Rev.Sorted) Randomized (Repeated)     Deterministic (Repeated) 
+100        0.0576                    0.1534                    0.1398                   
+500        0.3738                    5.1243                    1.9896                   
+1000       0.9044                    21.8029                   7.8465                   
+5000       6.1477                    640.9517                  252.9130                 
+10000      12.2006                   4566.1834                 883.8978                 
+
+*Note: For larger sizes (e.g., N=100,000), Deterministic Quicksort on sorted/reverse-sorted data will be extremely slow (O(N^2)) and may hit recursion limit or timeout.
